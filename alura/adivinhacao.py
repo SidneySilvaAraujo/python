@@ -1,7 +1,8 @@
+import random
 print("Bem vindo ao jogo de adivinhação!")
 tentativas = int(input("Informe quantas tentativas você deseja."))
 rodada = 1
-numero_secreto = 38
+numero_secreto = random.randrange(1, 101)
 while (tentativas > 0):
     print("Tentativa {} de {}".format(rodada, tentativas))
     chute = int(input("Digite um número entre: 1 e 100"))
@@ -16,6 +17,7 @@ while (tentativas > 0):
         print("Você digitou:", chute, "o número é menor!")
     tentativas = tentativas -1
     rodada = rodada + 1
+print("O número secreto era: {}".format(numero_secreto))
 print("Fim de jogo.")
 
 
