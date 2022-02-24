@@ -20,12 +20,12 @@ while (tentativas > 0):
     if chute < 1 or chute > 100:
         print("Você deve digitar um número entre 1 e 100")
     elif (numero_secreto == chute):
-        print("Você digitou:", chute, "parabéns, você acertou!")
+        print("Você digitou: {} parabéns, você acertou!".format(chute))
         break
     elif (chute < numero_secreto):
-        print("Você digitou:", chute, "o número é maior!")
+        print("Você digitou: {} o número é maior!".format(chute))
     elif (chute > numero_secreto):
-        print("Você digitou:", chute, "o número é menor!")
+        print("Você digitou: {} o número é menor!".format(chute))
     tentativas = tentativas -1
     rodada = rodada + 1
 print("O número secreto era:     {}".format(numero_secreto))
